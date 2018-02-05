@@ -1,0 +1,87 @@
+.inline-block {
+  display: inline-block;
+}
+
+.box {
+  padding: 12px;
+  margin-top: 48px;
+  text-align: center;
+  font-size: 0;
+}
+
+.box .img {
+  width: 85px;
+  height: 85px;
+}
+
+.box .left {
+  background: url('../images/Manchester United.png') no-repeat center center;
+  animation: team-logo-left .7s forwards;
+  opacity: 0;
+}
+
+.box .middle {
+  height: 85px;
+  line-height: 85px;
+  vertical-align: top;
+  font-size: 16px;
+  margin: 0 160px;
+  font-weight: 700;
+}
+
+.box .right {
+  background: url('../images/Arsenal.png') no-repeat center center;
+  animation: team-logo-right .7s forwards;
+}
+
+@keyframes team-logo-left {
+  0% {
+    transform: translate3d(-145px, 0, 0) scale(2);
+    transform-origin: center;
+    animation-timing-function: ease-out;
+    opacity: .05;
+  }
+  50%, 60% {
+    transform: translate3d(76px, 0, 0) scale(2);
+    transform-origin: center;
+    animation-timing-function: cubic-bezier(.33, .95, .77, 1.01);
+    opacity: .8;
+  }
+  85% {
+    transform: translate3d(-10px, 0, 0) scale(1);
+    animation-timing-function: ease-in;
+    transform-origin: center;
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    transform-origin: center;
+    opacity: 1;
+  }
+}
+
+@keyframes team-logo-right {
+  0% {
+    transform: translate3d(145px, 0, 0) scale(2);
+    transform-origin: center;
+    animation-timing-function: ease-out;
+    opacity: .05;
+  }
+  50%, 60% {
+    transform: translate3d(-76px, 0, 0) scale(2);
+    transform-origin: center;
+    animation-timing-function: cubic-bezier(.33, .95, .77, 1.01);
+    opacity: .8;
+  }
+  85% {
+    transform: translate3d(10px, 0, 0) scale(1);
+    animation-timing-function: ease-in;
+    transform-origin: center;
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    transform-origin: center;
+    opacity: 1;
+  }
+}
