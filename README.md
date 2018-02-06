@@ -5,3 +5,4 @@
 ## 2018-2
 * 🤛 [async/await](js/async-await/async-await.js)
 * 👏 [css3 uc animation](html/animation.html)
+* 😆 [css3 slideToggle](html/slideToggle.html)
