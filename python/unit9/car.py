@@ -1,3 +1,5 @@
+"""一组用于表示燃油汽车和电动汽车的类"""
+
 class Car():
   """一次模拟汽车的简单尝试"""
   def __init__(self, make, model, year):
@@ -28,13 +30,42 @@ class Car():
   def increment_odometer(self, miles):
     """将里程表读数增加为指定的量"""
     self.odometer_reading += miles
+
+class ElectricCar(Car):
+  """电动汽车的独特之处"""
+
+  def __init__(self, make, model, year):  
+    """初始化父类的属性"""
+    super().__init__(make, model, year)
+    self.battery = Batter()
+
+class Batter():
+  """一次模拟电动汽车电瓶的简单尝试"""
+
+  def __init__(self, battery_size = 70):
+    """初始化电瓶的属性"""
+    self.battery_size = battery_size
+  def describe_battery(self):
+    """打印一条描述电瓶容量的消息"""
+    print("This car has a " + str(self.battery_size) + "-kWh battery.")
+
+  def get_range(self):
+    """打印一条消息,指出电瓶的续航里程"""
+    if self.battery_size == 70:
+      range = 240
+    elif self.battery_size == 85:
+      range = 270 
+
+    message = "This car can go approximately " + str(range)
+    message += " miles on a full charge."
+    print(message)
   
-my_new_car = Car('audi', 'a4', 2016)
-print(my_new_car.get_descriptive_name())
-my_new_car.read_odometer()
-my_new_car.increment_odometer(235000)
-my_new_car.read_odometer()
+# my_new_car = Car('audi', 'a4', 2016)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.read_odometer()
+# my_new_car.increment_odometer(235000)
+# my_new_car.read_odometer()
 # my_new_car.update_odometer(24)
-my_new_car.increment_odometer(1000)
-my_new_car.read_odometer()
+# my_new_car.increment_odometer(1000)
+# my_new_car.read_odometer()
 # my_new_car.update_odometer(23)
