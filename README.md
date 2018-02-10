@@ -8,3 +8,4 @@
 * 😆 [css3 slideToggle](html/slideToggle.html)
 * 😅 [python unit9 stydy1](python/unit9)
 * 😶 [python unit0 study2](python/unit9)
+* 👀 [python unit10 study1](python/unit10)
