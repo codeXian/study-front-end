@@ -10,3 +10,4 @@
 * 😶 [python unit9 study2](python/unit9)
 * 👀 [python unit10 study1](python/unit10)
 * 🙌 [python unit10 study2](python/unit10)
+* 😱 [python unit11 study1](python/unit11)
