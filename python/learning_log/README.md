@@ -25,3 +25,18 @@ python3 manage.py startapp learning_logs
 # 创建超级管理员
 python3 manage.py createsuperuser
 ```
+
+## 部署web应用程序
+
+```bash
+# 建立Heroku账户
+https://heroku.com/
+# 安装Heroku Toolbelt
+# 安装必要的包
+pip install dj-database-url
+pip install dj-static
+pip install static3
+pip install gunicorn
+# 创建包含包列表的文件 requirements.txt
+pip freeze > requirements.txt
+```
